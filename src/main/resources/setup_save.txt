@@ -1,0 +1,2 @@
+reload solr configuration main in core main
+update classification from uri resource:classifications/rfc5646.xml
