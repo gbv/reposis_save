@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass ID="mir_genres"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="MCRClassification.xsd">
+  <label xml:lang="de" text="Genre" description="Liste der Dokumenttypen" />
+  <label xml:lang="en" text="genre" description="A list of document types" />
+  <label xml:lang="x-uri" text="https://save-test.gbv.de/api/v2/classifications/mir_genres" />
+  <categories>
+    <category ID="archaeology">
+      <label xml:lang="de" text="Archäologie" />
+      <label xml:lang="en" text="Archaeology" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="architecture">
+      <label xml:lang="de" text="Architektur" />
+      <label xml:lang="en" text="Architecture" />
+      <label xml:lang="x-mapping" text="marcgt:technical_drawing" />
+    </category>
+    <category ID="arms_armor">
+      <label xml:lang="de" text="Waffen und Rüstungen" />
+      <label xml:lang="en" text="Arms and Armour" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="art_in_architecture">
+      <label xml:lang="de" text="Kunst am Bau" />
+      <label xml:lang="en" text="Art in Architecture" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="charter">
+      <label xml:lang="de" text="Urkunden" />
+      <label xml:lang="en" text="Charters" />
+      <label xml:lang="x-mapping" text="marcgt:letter" />
+    </category>
+    <category ID="coins_medals">
+      <label xml:lang="de" text="Münzen und Medaillen" />
+      <label xml:lang="en" text="Coins and Medals" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="computer_art">
+      <label xml:lang="de" text="Computerkunst" />
+      <label xml:lang="en" text="Computer Art" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="craft">
+      <label xml:lang="de" text="Kunsthandwerk" />
+      <label xml:lang="en" text="Crafts" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="ethnology">
+      <label xml:lang="de" text="Ethnologie" />
+      <label xml:lang="en" text="Ethnology" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="everyday_culture">
+      <label xml:lang="de" text="Alltagskultur" />
+      <label xml:lang="en" text="Everyday Culture" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="film_sound">
+      <label xml:lang="de" text="Film und Ton" />
+      <label xml:lang="en" text="Film and Sound" />
+      <label xml:lang="x-mapping" text="marcgt:videorecording" />
+    </category>
+    <category ID="graphic">
+      <label xml:lang="de" text="Grafik" />
+      <label xml:lang="en" text="Graphic Art" />
+      <label xml:lang="x-mapping" text="marcgt:graphic" />
+    </category>
+    <category ID="installation">
+      <label xml:lang="de" text="Installation" />
+      <label xml:lang="en" text="Installation Art" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="manuscript">
+      <label xml:lang="de" text="Handschriften" />
+      <label xml:lang="en" text="Manuscripts" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="map">
+      <label xml:lang="de" text="Karten" />
+      <label xml:lang="en" text="Maps" />
+      <label xml:lang="x-mapping" text="marcgt:map" />
+    </category>
+    <category ID="medicine">
+      <label xml:lang="de" text="Medizin" />
+      <label xml:lang="en" text="Medicine" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="natural_history">
+      <label xml:lang="de" text="Naturkunde" />
+      <label xml:lang="en" text="Natural History" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="painting">
+      <label xml:lang="de" text="Malerei" />
+      <label xml:lang="en" text="Painting" />
+      <label xml:lang="x-mapping" text="marcgt:picture" />
+    </category>
+    <category ID="performance_art">
+      <label xml:lang="de" text="Aktionskunst" />
+      <label xml:lang="en" text="Performance Art" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="photograph">
+      <label xml:lang="de" text="Fotografie" />
+      <label xml:lang="en" text="Photography" />
+      <label xml:lang="x-mapping" text="marcgt:picture" />
+    </category>
+    <category ID="poster">
+      <label xml:lang="de" text="Plakate" />
+      <label xml:lang="en" text="Posters" />
+      <label xml:lang="x-mapping" text="marcgt:graphic" />
+    </category>
+    <category ID="printed_material">
+      <label xml:lang="de" text="Druckschriften" />
+      <label xml:lang="en" text="Printed Material" />
+      <label xml:lang="x-mapping" text="marcgt:book" />
+    </category>
+    <category ID="records">
+      <label xml:lang="de" text="Akten" />
+      <label xml:lang="en" text="Records" />
+      <label xml:lang="x-mapping" text="marcgt:report" />
+    </category>
+    <category ID="sculpture">
+      <label xml:lang="de" text="Skulptur" />
+      <label xml:lang="en" text="Sculpture" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+    <category ID="technology">
+      <label xml:lang="de" text="Technik" />
+      <label xml:lang="en" text="Technology" />
+      <label xml:lang="x-mapping" text="marcgt:technical_drawing" />
+    </category>
+    <category ID="textile_art">
+      <label xml:lang="de" text="Textilkunst" />
+      <label xml:lang="en" text="Textile Art" />
+      <label xml:lang="x-mapping" text="marcgt:realia" />
+    </category>
+  </categories>
+</mycoreclass>
