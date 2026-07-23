@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass ID="mir_institutes"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="MCRClassification.xsd">
+  <label xml:lang="de" text="Institutionen" description="Liste der Institutionen, die in SAVe vertreten sind" />
+  <label xml:lang="en" text="Institutions" description="List of institutions represented in SAVe" />
+  <label xml:lang="x-uri" text="https://save-test.gbv.de/api/v2/classifications/mir_institutes" />
+  <categories>
+    <category ID="heimatmuseum_bevern">
+      <label xml:lang="de" text="Heimatmuseum Bevern" />
+      <label xml:lang="x-isil" text="DE-MUS-273510" />
+      <url xlink:href="https://schloss-bevern.de/?page_id=169" />
+    </category>
+    <category ID="oberharzer_bergwerksmuseum_clausthal_zellerfeld">
+      <label xml:lang="de" text="Oberharzer Bergwerksmuseum Clausthal-Zellerfeld" />
+      <label xml:lang="x-isil" text="DE-MUS-031910" />
+      <url xlink:href="https://www.oberharzerbergwerksmuseum.de/" />
+    </category>
+    <category ID="heimatmuseum_duderstadt">
+      <label xml:lang="de" text="Heimatmuseum Duderstadt" />
+      <label xml:lang="x-isil" text="DE-MUS-037012" />
+      <url xlink:href="https://www.duderstadt.de/portal/seiten/das-heimatmuseum-900000099-25420.html" />
+    </category>
+    <category ID="heimatmuseum_northeim">
+      <label xml:lang="de" text="Heimatmuseum Northeim" />
+      <label xml:lang="x-isil" text="DE-MUS-105417" />
+      <url xlink:href="https://www.northeim.de/tourismus-kultur/museum-stadthalle-buergersaal/museum.html" />
+    </category>
+    <category ID="staedtisches_museum_seesen">
+      <label xml:lang="de" text="Städtisches Museum Seesen" />
+      <label xml:lang="x-isil" text="DE-MUS-124012" />
+      <url xlink:href="https://www.museum-seesen.de/" />
+    </category>
+    <category ID="museum_uslar">
+      <label xml:lang="de" text="Museum Uslar" />
+      <label xml:lang="x-isil" text="DE-MUS-136416" />
+      <url xlink:href="https://www.uslar.de/portal/seiten/museum-uslar-900000171-30090.html" />
+    </category>
+    <category ID="historische_sammlung_gross_schneen">
+      <label xml:lang="de" text="Historische Sammlung Groß Schneen" />
+      <url xlink:href="https://www.heimatverein-gross-schneen.de/m/seite/763306/die-sammlung.html" />
+    </category>
+    <category ID="museum_ritterhaus_osterode">
+      <label xml:lang="de" text="Museum im Ritterhaus Osterode" />
+      <label xml:lang="x-isil" text="DE-MUS-110414" />
+      <url xlink:href="https://www.osterode.de/portal/seiten/museum-im-ritterhaus-geschichte-erleben-912000654-21351.html" />
+    </category>
+    <category ID="kz_gedenkstaette_moringen">
+      <label xml:lang="de" text="KZ-Gedenkstätte Moringen" />
+      <label xml:lang="x-isil" text="DE-MUS-926714" />
+      <url xlink:href="https://www.gedenkstaette-moringen.de/" />
+    </category>
+    <category ID="museum_schloss_fuerstenberg">
+      <label xml:lang="de" text="Museum Schloss Fürstenberg" />
+      <label xml:lang="x-isil" text="DE-MUS-051018" />
+      <url xlink:href="https://www.fuerstenberg-schloss.com/schloss/museum" />
+    </category>
+    <category ID="museum_hann_muenden">
+      <label xml:lang="de" text="Städtisches Museum Hann. Münden" />
+      <label xml:lang="x-isil" text="DE-MUS-099916" />
+      <url xlink:href="https://www.hann.muenden.de/museum" />
+    </category>
+    <category ID="heimatmuseum_bad_sachsa">
+      <label xml:lang="de" text="Heimatmuseum Bad Sachsa" />
+      <label xml:lang="x-isil" text="DE-MUS-341519" />
+      <url xlink:href="https://www.heimatmuseum-bad-sachsa.de/" />
+    </category>
+  </categories>
+</mycoreclass>
