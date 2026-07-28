@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass ID="identifier"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="MCRClassification.xsd">
+  <label xml:lang="de" text="Identifikatoren" />
+  <label xml:lang="en" text="Identifier" />
+  <label xml:lang="x-uri" text="https://save-test.gbv.de/api/v2/classifications/identifier" />
+  <categories>
+    <category ID="kuni">
+      <label xml:lang="de" text="kuniweb" />
+      <label xml:lang="en" text="kuniweb" />
+    </category>
+  </categories>
+</mycoreclass>
