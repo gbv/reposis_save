@@ -135,7 +135,7 @@
         <div class="col-2">
           <h4>Navigation</h4>
           <ul class="internal_links">
-            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
+            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" />
           </ul>
         </div>
         <div class="col-2">
