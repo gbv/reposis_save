@@ -10,5 +10,9 @@
       <label xml:lang="de" text="kuniweb" />
       <label xml:lang="en" text="kuniweb" />
     </category>
+    <category ID="museum-digital">
+      <label xml:lang="de" text="museum-digital" />
+      <label xml:lang="en" text="museum-digital" />
+    </category>
   </categories>
 </mycoreclass>
