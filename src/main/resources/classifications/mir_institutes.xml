@@ -29,6 +29,7 @@
     </category>
     <category ID="historische_sammlung_gross_schneen">
       <label xml:lang="de" text="Historische Sammlung Groß Schneen" />
+      <label xml:lang="x-isil" text="DE-4674" />
       <url xlink:href="https://www.heimatverein-gross-schneen.de/m/seite/763306/die-sammlung.html" />
     </category>
     <category ID="kz_gedenkstaette_moringen">
