@@ -163,7 +163,7 @@
     <div id="powered_by">
       <a href="http://www.mycore.de">
         <img
-          src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png"
+          src="{$WebApplicationBaseURL}mir-layout/images/logo-mycore-white.svg"
           title="{2026.06-SNAPSHOT}"
           alt="powered by MyCoRe" />
       </a>
