@@ -135,7 +135,7 @@
         <div class="col-2">
           <h4>Navigation</h4>
           <ul class="internal_links">
-            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
+            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" />
           </ul>
         </div>
         <div class="col-2">
@@ -163,7 +163,7 @@
     <div id="powered_by">
       <a href="http://www.mycore.de">
         <img
-          src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png"
+          src="{$WebApplicationBaseURL}mir-layout/images/logo-mycore-white.svg"
           title="{2026.06-SNAPSHOT}"
           alt="powered by MyCoRe" />
       </a>
