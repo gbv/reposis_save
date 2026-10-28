@@ -6,8 +6,8 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   exclude-result-prefixes="#all">
 
-  <xsl:import href="xslImport:badges:badges/mir-badges-date.xsl"/>
-  <xsl:include href="resource:xslt/badges/mir-badges-utils.xsl"/>
+  <xsl:import href="xslImport:badges:mir/badges/date.xsl"/>
+  <xsl:include href="resource:xslt/mir/badges/utils.xsl"/>
 
   <xsl:template match="doc" mode="badge">
     <xsl:apply-imports/>

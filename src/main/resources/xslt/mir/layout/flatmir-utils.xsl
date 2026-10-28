@@ -6,7 +6,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   exclude-result-prefixes="#all">
 
-  <xsl:import href="resource:xslt/layout/mir-common-layout.xsl" />
+  <xsl:import href="resource:xslt/mir/layout/common.xsl" />
 
   <xsl:template name="mir.navigation">
     <div id="header_box" class="clearfix container">
