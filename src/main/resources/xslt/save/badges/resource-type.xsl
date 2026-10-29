@@ -4,6 +4,7 @@
   exclude-result-prefixes="#all">
 
   <xsl:import href="xslImport:badges:save/badges/resource-type.xsl"/>
+  <xsl:include href="resource:xslt/mir/badges/utils.xsl" />
   <xsl:include href="resource:xslt/save/badges/utils.xsl" />
 
   <xsl:template match="doc" mode="badge">

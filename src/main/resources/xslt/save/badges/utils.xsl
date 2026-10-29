@@ -6,7 +6,10 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   exclude-result-prefixes="#all">
 
-  <xsl:include href="resource:xslt/mir/badges/utils.xsl" />
+  <!--
+    Requires resource:xslt/mir/badges/utils.xsl (output-badge), which has to be included by the including stylesheet.
+    Including it here would make it the same module for every badge stylesheet and Saxon warns about duplicate includes.
+  -->
 
   <!--
     Outputs a badge for each category of the given classification assigned to the current solr doc.
