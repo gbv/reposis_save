@@ -161,10 +161,10 @@
   <xsl:template name="mir.powered_by">
     <xsl:variable name="version" select="concat('MyCoRe ', mcrversion:complete-version())" />
     <div id="powered_by">
-      <a href="http://www.mycore.de">
+      <a href="https://www.mycore.de">
         <img
           src="{$WebApplicationBaseURL}mir-layout/images/logo-mycore-white.svg"
-          title="{2026.06-SNAPSHOT}"
+          title="{$version}"
           alt="powered by MyCoRe" />
       </a>
     </div>
