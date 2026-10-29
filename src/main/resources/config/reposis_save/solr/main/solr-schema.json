@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "add-field": {
+      "name": "mods.dateCreated",
+      "type": "string"
+    }
+  },
+  {
+    "add-field": {
+      "name": "mods.yearCreated",
+      "type": "pint"
+    }
+  }
+]

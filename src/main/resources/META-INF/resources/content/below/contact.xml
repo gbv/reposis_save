@@ -4,16 +4,160 @@
     <div class="row">
       <div class="col-md-12" lang="de">
         <h2>Kontakt</h2>
-        <p>
-          <strong>Institution</strong>
-          <br />
-          Name
-          <br />
-          E-Mail:
-          <span class="madress">name [at] beispiel.de</span>
-          <br />
-          Telefon: +49 00 00 00 00
-        </p>
+        <contact-entry>
+          <name>Oberharzer Bergwerksmuseum</name>
+          <contact-person>Justus Teicke</contact-person>
+          <contact-person>Axel Funke</contact-person>
+          <address>
+            <street>Bornhardstraße 16</street>
+            <postal-code>38678</postal-code>
+            <city>Clausthal-Zellerfeld</city>
+          </address>
+          <phone>05323 9895-0</phone>
+          <email>info@bergwerksmuseum.de</email>
+          <website>https://www.oberharzerbergwerksmuseum.de</website>
+        </contact-entry>
+        <contact-entry>
+          <name>Museum Schloss Fürstenberg</name>
+          <contact-person>Christian Lechelt</contact-person>
+          <address>
+            <street>Meinbrexener Straße 2</street>
+            <postal-code>37699</postal-code>
+            <city>Fürstenberg</city>
+          </address>
+          <phone>05271 966778-0</phone>
+          <email>museum@fuerstenberg-schloss.com</email>
+          <website>https://www.fuerstenberg-porzellan.com/blog/museum-schloss-fuerstenberg</website>
+        </contact-entry>
+        <contact-entry>
+          <name>Städtisches Museum Hann. Münden</name>
+          <contact-person>Stefan Schäfer</contact-person>
+          <address>
+            <street>Schloßplatz 5</street>
+            <additional>Welfenschloss</additional>
+            <postal-code>34346</postal-code>
+            <city>Hann. Münden</city>
+          </address>
+          <phone>05541 75-202</phone>
+          <email>museum@hann.muenden.de</email>
+          <website>https://www.hann.muenden.de/museum</website>
+        </contact-entry>
+        <contact-entry>
+          <name>KZ-Gedenkstätte Moringen</name>
+          <contact-person>Stefan Wilbricht</contact-person>
+          <address>
+            <street>Lange Straße 58</street>
+            <postal-code>37186</postal-code>
+            <city>Moringen</city>
+          </address>
+          <phone>05554 2520</phone>
+          <email>info@gedenkstaette-moringen.de</email>
+          <website>https://www.gedenkstaette-moringen.de</website>
+        </contact-entry>
+        <contact-entry>
+          <name>Heimatmuseum Duderstadt</name>
+          <contact-person>Sandra Kästner</contact-person>
+          <address>
+            <street>Bei der Oberkirche 3</street>
+          </address>
+          <phone>05527 2539 / 05527-2144</phone>
+          <email>s.kaestner@duderstadt.de</email>
+          <website>https://www.duderstadt.de/portal/seiten/das-heimatmuseum-900000099-25420.html</website>
+        </contact-entry>
+        <contact-entry>
+          <name>Heimatmuseum Northeim</name>
+          <contact-person>Dr. Stefan Teuber</contact-person>
+          <address>
+            <street>Am Münster 32/33</street>
+            <postal-code>37154</postal-code>
+            <city>Northeim</city>
+          </address>
+          <phone>05551 65060</phone>
+          <email>museum@northeim.de</email>
+          <website>https://www.northeim.de/tourismus-kultur/museum-stadthalle-buergersaal/museum.html</website>
+        </contact-entry>
+        <contact-entry>
+          <name>Museum Uslar</name>
+          <contact-person>Dr. Daniel Althaus</contact-person>
+          <address>
+            <street>Mühlentor 4</street>
+            <postal-code>37170</postal-code>
+            <city>Uslar</city>
+          </address>
+          <phone>05571 307-142 / -220</phone>
+          <email>althaus@uslar.de</email>
+          <website>https://www.uslar.de/portal/seiten/museum-uslar-900000171-30090.html</website>
+        </contact-entry>
+        <contact-entry>
+          <name>Museum im Ritterhaus</name>
+          <contact-person>Angelika Paetzold</contact-person>
+          <address>
+            <street>Rollberg 32</street>
+            <postal-code>37520</postal-code>
+            <city>Osterode am Harz</city>
+          </address>
+          <phone>05522 919793</phone>
+          <email>museum@osterode.de</email>
+          <website>https://www.osterode.de/portal/seiten/museum-im-ritterhaus-geschichte-erleben-912000654-21351.html</website>
+        </contact-entry>
+        <contact-entry>
+          <name>Wintersport- und Heimatmuseum Bad Sachsa</name>
+          <contact-person>Hubertus Krieghoff</contact-person>
+          <address>
+            <street>Hindenburgstraße 6</street>
+            <postal-code>37441</postal-code>
+            <city>Bad Sachsa</city>
+          </address>
+          <email>info@heimatmuseum-bad-sachsa.de</email>
+          <website>https://www.heimatmuseum-bad-sachsa.de</website>
+        </contact-entry>
+        <contact-entry>
+          <name>Historische Sammlung Groß Schneen</name>
+          <contact-person>Silke Grewe-Pyttlich</contact-person>
+          <address>
+            <street>Landstraße 24a</street>
+            <postal-code>37133</postal-code>
+            <city>Friedland</city>
+            <address-line>Groß Schneen</address-line>
+          </address>
+          <phone>05504 345</phone>
+          <email>Heimat-ev-grschneen@web.de</email>
+          <website>https://www.heimatverein-gross-schneen.de/m/seite/763306/die-sammlung.html</website>
+        </contact-entry>
+        <contact-entry>
+          <name>Heimatmuseum Bevern</name>
+          <contact-person>Marita Liebe</contact-person>
+          <address>
+            <street>Schloß 1</street>
+            <postal-code>37689</postal-code>
+            <city>Bevern</city>
+          </address>
+          <email>marita-gisela@web.de</email>
+          <website>https://hkv-bevern.de/startseite/heimatmuseum-2/</website>
+        </contact-entry>
+        <contact-entry>
+          <name>Städtisches Museum Seesen</name>
+          <contact-person>Dirk Stroschein</contact-person>
+          <address>
+            <street>Wilhelmsplatz 4</street>
+            <postal-code>38723</postal-code>
+            <city>Seesen</city>
+          </address>
+          <phone>05381 48891</phone>
+          <email>museum@seesen.de</email>
+          <website>https://www.museum-seesen.de/Städtisches-Museum/</website>
+        </contact-entry>
+        <contact-entry>
+          <name>Landschaftsverband Südniedersachsen e.V.</name>
+          <address>
+            <street>Berliner Straße 4</street>
+            <postal-code>37073</postal-code>
+            <city>Göttingen</city>
+          </address>
+          <phone>0551 63443264</phone>
+          <email>gst@landschaftsverband.org</email>
+          <website>https://landschaftsverband.org</website>
+        </contact-entry>
       </div>
     </div>
   </section>
