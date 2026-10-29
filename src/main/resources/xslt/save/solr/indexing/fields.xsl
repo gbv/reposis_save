@@ -4,7 +4,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   exclude-result-prefixes="mods">
 
-  <xsl:import href="xslImport:solr-document:save/solr/indexing/save-solr.xsl"/>
+  <xsl:import href="xslImport:solr-document:save/solr/indexing/fields.xsl"/>
 
   <xsl:template match="mycoreobject[contains(@ID,'_mods_')]">
     <xsl:apply-imports />
