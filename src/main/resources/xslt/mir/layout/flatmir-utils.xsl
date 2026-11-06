@@ -6,7 +6,7 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   exclude-result-prefixes="#all">
 
-  <xsl:import href="resource:xslt/layout/mir-common-layout.xsl" />
+  <xsl:import href="resource:xslt/mir/layout/common.xsl" />
 
   <xsl:template name="mir.navigation">
     <div id="header_box" class="clearfix container">
@@ -135,7 +135,7 @@
         <div class="col-2">
           <h4>Navigation</h4>
           <ul class="internal_links">
-            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
+            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" />
           </ul>
         </div>
         <div class="col-2">
@@ -161,10 +161,10 @@
   <xsl:template name="mir.powered_by">
     <xsl:variable name="version" select="concat('MyCoRe ', mcrversion:complete-version())" />
     <div id="powered_by">
-      <a href="http://www.mycore.de">
+      <a href="https://www.mycore.de">
         <img
-          src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png"
-          title="{2026.06-SNAPSHOT}"
+          src="{$WebApplicationBaseURL}mir-layout/images/logo-mycore-white.svg"
+          title="{$version}"
           alt="powered by MyCoRe" />
       </a>
     </div>
