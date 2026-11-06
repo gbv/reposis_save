@@ -63,7 +63,7 @@
       <xsl:with-param name="tooltip" select="mcri18n:translate('mir.date.issued')"/>
       -->
       <xsl:with-param name="link" select="
-        concat($ServletsBaseURL, 'solr/find?condQuery=*&amp;fq=mods.dateCreated:%22', string(($date)[1]), '%22')
+        concat($ServletsBaseURL, 'solr/find?condQuery=*&amp;fq=mods.yearCreated:%22', string($label), '%22')
       "/>
       <xsl:with-param name="tooltip" select="mcri18n:translate('mir.date.created')"/>
       <!-- END save adaptions -->
@@ -74,23 +74,16 @@
     <xsl:param name="date" as="xs:string?"/>
     <xsl:variable name="normalized" select="mirdateconverter:convert-date($date, 'ISO8601')"/>
 
+    <!-- START save adaptions: always output year only (YYYY) -->
     <xsl:choose>
-      <xsl:when test="matches($normalized, '^\d{4}$')">
-        <xsl:value-of select="$normalized"/>
-      </xsl:when>
-      <xsl:when test="matches($normalized, '^\d{4}-\d{2}$')">
-        <xsl:value-of select="$normalized"/>
-      </xsl:when>
-      <xsl:when test="matches($normalized, '^\d{4}-\d{2}-\d{2}$')">
-        <xsl:value-of select="format-date(xs:date($normalized), mcri18n:translate('metaData.dateYearMonthDay.xsl3'))"/>
-      </xsl:when>
-      <xsl:when test="$normalized castable as xs:dateTime">
-        <xsl:value-of select="format-dateTime(xs:dateTime($normalized), mcri18n:translate('metaData.dateTime.xsl3'))"/>
+      <xsl:when test="matches($normalized, '^\d{4}')">
+        <xsl:value-of select="substring($normalized, 1, 4)"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:value-of select="$normalized"/>
       </xsl:otherwise>
     </xsl:choose>
+    <!-- END save adaptions -->
   </xsl:template>
 
 </xsl:stylesheet>
