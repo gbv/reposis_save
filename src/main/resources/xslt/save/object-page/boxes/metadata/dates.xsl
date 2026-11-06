@@ -12,7 +12,8 @@
     Otherwise the encoded start/end range or the single encoded date is rendered; the encoded values
     are used for search and the date badge.
   -->
-  <xsl:template match="field[@name='dates.created']" mode="metadata-box-field">
+  <!-- priority: overrides the template for the same field in mir/object-page/boxes/metadata/dates.xsl -->
+  <xsl:template match="field[@name='dates.created']" mode="metadata-box-field" priority="1">
     <xsl:param name="object" as="element(mycoreobject)" />
     <xsl:variable name="dates" select="
       mirobject:mods($object)/mods:originInfo[@eventType='creation']/mods:dateCreated
