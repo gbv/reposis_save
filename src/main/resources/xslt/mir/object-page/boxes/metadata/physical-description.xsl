@@ -31,9 +31,18 @@
       </xsl:if>
     </xsl:if>
     -->
+    <!-- one row per form type (material, technique, decoration), untyped forms keep the combined label -->
+    <xsl:variable name="forms" select="$mods/mods:physicalDescription/mods:form" />
+    <xsl:for-each select="'material', 'technique', 'decoration'">
+      <xsl:call-template name="meta-row-from-nodes">
+        <xsl:with-param name="label-key" select="'save.physicalDescription.form.' || ." />
+        <xsl:with-param name="nodes" select="$forms[@type = current()]" />
+        <xsl:with-param name="sep" select="', '" />
+      </xsl:call-template>
+    </xsl:for-each>
     <xsl:call-template name="meta-row-from-nodes">
       <xsl:with-param name="label-key" select="'save.physicalDescription.form'" />
-      <xsl:with-param name="nodes" select="$mods/mods:physicalDescription/mods:form" />
+      <xsl:with-param name="nodes" select="$forms[not(@type)]" />
       <xsl:with-param name="sep" select="', '" />
     </xsl:call-template>
     <!-- END save adaptions -->
@@ -53,14 +62,19 @@
     <xsl:param name="object" as="element(mycoreobject)" />
     <xsl:variable name="mods" select="mirobject:mods($object)" />
 
-    <xsl:for-each select="$mods/mods:physicalDescription/mods:extent">
-      <xsl:call-template name="meta-row">
-        <xsl:with-param name="label-key" select="'component.mods.metaData.dictionary.extent'" />
-        <xsl:with-param name="value">
+    <!-- START save adaptions: one row for all extents (one mods:extent per measurement) -->
+    <xsl:call-template name="meta-row">
+      <xsl:with-param name="label-key" select="'component.mods.metaData.dictionary.extent'" />
+      <xsl:with-param name="value">
+        <xsl:for-each select="$mods/mods:physicalDescription/mods:extent">
+          <xsl:if test="position() != 1">
+            <br />
+          </xsl:if>
           <xsl:call-template name="format-extent" />
-        </xsl:with-param>
-      </xsl:call-template>
-    </xsl:for-each>
+        </xsl:for-each>
+      </xsl:with-param>
+    </xsl:call-template>
+    <!-- END save adaptions -->
   </xsl:template>
 
 </xsl:stylesheet>
