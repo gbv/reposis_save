@@ -230,6 +230,10 @@
       <label xml:lang="de" text="Lizenzgeber(in)" description="Eine Person oder Institution, die die Nutzung eines Werkes unter bestimmten Bedingungen lizenziert." />
       <label xml:lang="en" text="Licensor" description="Use for a person or organization holding a license for use of a resource, granting permission to use the resource under specified conditions." />
     </category>
+    <category ID="dpc">
+      <label xml:lang="de" text="Dargestellte Person / Institution" description="Eine Person oder Institution, die in einem Werk dargestellt oder porträtiert wird, insbesondere in einem Kunstwerk." />
+      <label xml:lang="en" text="Depicted" description="An entity depicted or portrayed in a work, particularly in a work of art." />
+    </category>
     <!-- end custom -->
   </categories>
 </mycoreclass>
