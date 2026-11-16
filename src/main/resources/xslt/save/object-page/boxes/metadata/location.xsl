@@ -26,4 +26,14 @@
     </xsl:if>
   </xsl:template>
 
+  <xsl:template match="field[@name='location.shelf']" mode="metadata-box-field" priority="1">
+    <xsl:param name="object" as="element(mycoreobject)" />
+
+    <xsl:if test="not(mcracl:is-current-user-guest-user())">
+      <xsl:next-match>
+        <xsl:with-param name="object" select="$object" />
+      </xsl:next-match>
+    </xsl:if>
+  </xsl:template>
+
 </xsl:stylesheet>
