@@ -12,8 +12,8 @@
       <label xml:lang="en" text="Copyright holder" description="A person or organization to whom copy and legal rights have been granted or transferred for the intellectual content of a work." />
     </category>
     <category ID="cre">
-      <label xml:lang="de" text="Urheber(in)" description="Eine Person oder Institution, die für den intellektuellen oder künstlerischen Inhalt eines Werkes verantwortlich ist." />
-      <label xml:lang="en" text="Creator" description="Use for a person or organization responsible for the intellectual or artistic content of a work." />
+      <label xml:lang="de" text="Hersteller(in)" description="Eine Person oder Institution, die ein Objekt hergestellt hat." />
+      <label xml:lang="en" text="Manufacturer" description="A person or organization that made an object." />
       <category ID="art">
         <label xml:lang="de" text="Künstler(in)" description="Eine Person oder Institution verwantwortlich für die Schaffung einer Arbeit durch Konzeption und Umsetzung des orignalen Grafik-Design, Zeichnung, Malerei, usw." />
         <label xml:lang="en" text="Artist" description="A person or organization responsible for creating a work by conceiving, and implementing, an original graphic design, drawing, painting, etc." />
