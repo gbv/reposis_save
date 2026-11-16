@@ -54,6 +54,11 @@
                     <xsl:when test="@id='brand'" />
                     <xsl:when test="@id='below'" />
                     <xsl:when test="@id='user'" />
+                    <xsl:when test="@id='institutions'">
+                      <xsl:call-template name="mir.generate_single_menu_entry">
+                        <xsl:with-param name="menuID" select="'institutions'" />
+                      </xsl:call-template>
+                    </xsl:when>
                     <xsl:otherwise>
                       <xsl:apply-templates select="." />
                     </xsl:otherwise>
