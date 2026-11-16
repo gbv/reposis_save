@@ -9,7 +9,7 @@
   <xsl:import href="resource:xslt/mir/layout/common.xsl" />
 
   <xsl:template name="mir.navigation">
-    <div id="header_box" class="clearfix container">
+    <div id="header_box" class="container">
       <div id="project_logo_box">
         <a
           href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2))}"
