@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Museum im Ritterhaus Osterode">
+    <div class="row">
+      <div class="col-md-12" lang="de">
+        <h1>Museum im Ritterhaus Osterode</h1>
+        <p>
+          ...
+        </p>
+        <ul>
+          <li>
+            <a href="../../servlets/solr/find?condQuery=*&amp;fq=category.top:%22mir_institutes%3Amuseum_ritterhaus_osterode%22">Objekte der Einrichtung anzeigen</a>
+          </li>
+          <li>
+            <a href="https://www.osterode.de/portal/seiten/museum-im-ritterhaus-geschichte-erleben-912000654-21351.html">Website der Einrichtung</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</MyCoReWebPage>

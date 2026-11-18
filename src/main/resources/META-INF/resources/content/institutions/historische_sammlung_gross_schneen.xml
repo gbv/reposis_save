@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Historische Sammlung Groß Schneen">
+    <div class="row">
+      <div class="col-md-12" lang="de">
+        <h1>Historische Sammlung Groß Schneen</h1>
+        <p>
+          ...
+        </p>
+        <ul>
+          <li>
+            <a href="../../servlets/solr/find?condQuery=*&amp;fq=category.top:%22mir_institutes%3Ahistorische_sammlung_gross_schneen%22">Objekte der Einrichtung anzeigen</a>
+          </li>
+          <li>
+            <a href="https://www.heimatverein-gross-schneen.de/m/seite/763306/die-sammlung.html">Website der Einrichtung</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</MyCoReWebPage>

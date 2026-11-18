@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Heimatmuseum Bevern">
+    <div class="row">
+      <div class="col-md-12" lang="de">
+        <h1>Heimatmuseum Bevern</h1>
+        <p>
+          ...
+        </p>
+        <ul>
+          <li>
+            <a href="../../servlets/solr/find?condQuery=*&amp;fq=category.top:%22mir_institutes%3Aheimatmuseum_bevern%22">Objekte der Einrichtung anzeigen</a>
+          </li>
+          <li>
+            <a href="https://schloss-bevern.de/?page_id=169">Website der Einrichtung</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</MyCoReWebPage>

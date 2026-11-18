@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Über das Projekt">
+    <div class="row">
+      <div class="col-md-12" lang="de">
+        <h1>Über das Projekt</h1>
+        <p>
+          ...
+        </p>
+      </div>
+    </div>
+  </section>
+</MyCoReWebPage>

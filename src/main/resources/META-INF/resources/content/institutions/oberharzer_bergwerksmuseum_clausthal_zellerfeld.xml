@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Oberharzer Bergwerksmuseum Clausthal-Zellerfeld">
+    <div class="row">
+      <div class="col-md-12" lang="de">
+        <h1>Oberharzer Bergwerksmuseum Clausthal-Zellerfeld</h1>
+        <p>
+          ...
+        </p>
+        <ul>
+          <li>
+            <a href="../../servlets/solr/find?condQuery=*&amp;fq=category.top:%22mir_institutes%3Aoberharzer_bergwerksmuseum_clausthal_zellerfeld%22">Objekte der Einrichtung anzeigen</a>
+          </li>
+          <li>
+            <a href="https://www.oberharzerbergwerksmuseum.de/">Website der Einrichtung</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</MyCoReWebPage>

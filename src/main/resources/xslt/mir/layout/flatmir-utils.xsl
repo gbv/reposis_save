@@ -47,6 +47,9 @@
               id="mir-main-nav-collapse-box"
               class="collapse navbar-collapse mir-main-nav__entries justify-content-between">
               <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <xsl:call-template name="mir.generate_single_menu_entry">
+                  <xsl:with-param name="menuID" select="'main'" />
+                </xsl:call-template>
                 <xsl:for-each select="$loaded_navigation_xml/menu">
                   <xsl:choose>
                     <!-- Ignore some menus, they are shown elsewhere in the layout -->
@@ -54,9 +57,9 @@
                     <xsl:when test="@id='brand'" />
                     <xsl:when test="@id='below'" />
                     <xsl:when test="@id='user'" />
-                    <xsl:when test="@id='institutions'">
+                    <xsl:when test="@id='about'">
                       <xsl:call-template name="mir.generate_single_menu_entry">
-                        <xsl:with-param name="menuID" select="'institutions'" />
+                        <xsl:with-param name="menuID" select="'about'" />
                       </xsl:call-template>
                     </xsl:when>
                     <xsl:otherwise>

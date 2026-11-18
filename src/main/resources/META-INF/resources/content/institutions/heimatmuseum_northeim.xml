@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Heimatmuseum Northeim">
+    <div class="row">
+      <div class="col-md-12" lang="de">
+        <h1>Heimatmuseum Northeim</h1>
+        <p>
+          ...
+        </p>
+        <ul>
+          <li>
+            <a href="../../servlets/solr/find?condQuery=*&amp;fq=category.top:%22mir_institutes%3Aheimatmuseum_northeim%22">Objekte der Einrichtung anzeigen</a>
+          </li>
+          <li>
+            <a href="https://www.northeim.de/tourismus-kultur/museum-stadthalle-buergersaal/museum.html">Website der Einrichtung</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</MyCoReWebPage>

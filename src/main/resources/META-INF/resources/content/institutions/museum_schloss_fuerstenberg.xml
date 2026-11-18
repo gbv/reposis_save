@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Museum Schloss Fürstenberg">
+    <div class="row">
+      <div class="col-md-12" lang="de">
+        <h1>Museum Schloss Fürstenberg</h1>
+        <p>
+          ...
+        </p>
+        <ul>
+          <li>
+            <a href="../../servlets/solr/find?condQuery=*&amp;fq=category.top:%22mir_institutes%3Amuseum_schloss_fuerstenberg%22">Objekte der Einrichtung anzeigen</a>
+          </li>
+          <li>
+            <a href="https://www.fuerstenberg-schloss.com/schloss/museum">Website der Einrichtung</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</MyCoReWebPage>
