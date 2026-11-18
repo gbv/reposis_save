@@ -54,7 +54,6 @@
                   <xsl:choose>
                     <!-- Ignore some menus, they are shown elsewhere in the layout -->
                     <xsl:when test="@id='main'" />
-                    <xsl:when test="@id='brand'" />
                     <xsl:when test="@id='below'" />
                     <xsl:when test="@id='user'" />
                     <xsl:when test="@id='about'">

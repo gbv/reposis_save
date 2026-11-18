@@ -6,12 +6,6 @@
       <label xml:lang="de">Start</label>
     </item>
   </menu>
-  <menu id="brand" dir="/content/brand">
-    <label xml:lang="de">MIR-Menü</label>
-    <item href="/content/index.xml" type="intern">
-      <label xml:lang="de">Start</label>
-    </item>
-  </menu>
   <menu id="below" dir="/content/below">
     <label xml:lang="de">Footer-Menü</label>
     <item href="/content/below/imprint.xml" type="intern">
