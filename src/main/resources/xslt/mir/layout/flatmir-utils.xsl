@@ -56,6 +56,17 @@
                     <xsl:when test="@id='main'" />
                     <xsl:when test="@id='below'" />
                     <xsl:when test="@id='user'" />
+                    <xsl:when test="@id='search'">
+                      <xsl:variable name="search-item" select="item[1]" />
+                      <li class="nav-item">
+                        <a
+                          id="search"
+                          href="{$WebApplicationBaseURL}{substring($search-item/@href, 2)}"
+                          class="nav-link {if (item/@href = $browserAddress) then 'active' else 'not-active'}">
+                          <xsl:apply-templates select="$search-item" mode="linkText" />
+                        </a>
+                      </li>
+                    </xsl:when>
                     <xsl:when test="@id='about'">
                       <xsl:call-template name="mir.generate_single_menu_entry">
                         <xsl:with-param name="menuID" select="'about'" />
