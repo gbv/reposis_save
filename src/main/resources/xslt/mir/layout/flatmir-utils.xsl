@@ -6,18 +6,10 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   exclude-result-prefixes="#all">
 
-  <xsl:import href="resource:xslt/layout/mir-common-layout.xsl" />
+  <xsl:import href="resource:xslt/mir/layout/common.xsl" />
 
   <xsl:template name="mir.navigation">
-    <div id="header_box" class="clearfix container">
-      <div id="options_nav_box" class="mir-prop-nav">
-        <nav>
-          <ul class="navbar-nav ms-auto flex-row">
-            <xsl:call-template name="mir.loginMenu" />
-            <xsl:call-template name="mir.languageMenu" />
-          </ul>
-        </nav>
-      </div>
+    <div id="header_box" class="container">
       <div id="project_logo_box">
         <a
           href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2))}"
@@ -26,6 +18,14 @@
           <span id="logo_modul">mycore</span>
           <span id="logo_slogan">mods institutional repository</span>
         </a>
+      </div>
+      <div id="options_nav_box" class="mir-prop-nav">
+        <nav>
+          <ul class="navbar-nav ms-auto flex-row">
+            <xsl:call-template name="mir.loginMenu" />
+            <xsl:call-template name="mir.languageMenu" />
+          </ul>
+        </nav>
       </div>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,13 +47,31 @@
               id="mir-main-nav-collapse-box"
               class="collapse navbar-collapse mir-main-nav__entries justify-content-between">
               <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <xsl:call-template name="mir.generate_single_menu_entry">
+                  <xsl:with-param name="menuID" select="'main'" />
+                </xsl:call-template>
                 <xsl:for-each select="$loaded_navigation_xml/menu">
                   <xsl:choose>
                     <!-- Ignore some menus, they are shown elsewhere in the layout -->
                     <xsl:when test="@id='main'" />
-                    <xsl:when test="@id='brand'" />
                     <xsl:when test="@id='below'" />
                     <xsl:when test="@id='user'" />
+                    <xsl:when test="@id='search'">
+                      <xsl:variable name="search-item" select="item[1]" />
+                      <li class="nav-item">
+                        <a
+                          id="search"
+                          href="{$WebApplicationBaseURL}{substring($search-item/@href, 2)}"
+                          class="nav-link {if (item/@href = $browserAddress) then 'active' else 'not-active'}">
+                          <xsl:apply-templates select="$search-item" mode="linkText" />
+                        </a>
+                      </li>
+                    </xsl:when>
+                    <xsl:when test="@id='about'">
+                      <xsl:call-template name="mir.generate_single_menu_entry">
+                        <xsl:with-param name="menuID" select="'about'" />
+                      </xsl:call-template>
+                    </xsl:when>
                     <xsl:otherwise>
                       <xsl:apply-templates select="." />
                     </xsl:otherwise>
@@ -135,7 +153,7 @@
         <div class="col-2">
           <h4>Navigation</h4>
           <ul class="internal_links">
-            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
+            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" />
           </ul>
         </div>
         <div class="col-2">
@@ -161,10 +179,10 @@
   <xsl:template name="mir.powered_by">
     <xsl:variable name="version" select="concat('MyCoRe ', mcrversion:complete-version())" />
     <div id="powered_by">
-      <a href="http://www.mycore.de">
+      <a href="https://www.mycore.de">
         <img
-          src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png"
-          title="{2026.06-SNAPSHOT}"
+          src="{$WebApplicationBaseURL}mir-layout/images/logo-mycore-white.svg"
+          title="{$version}"
           alt="powered by MyCoRe" />
       </a>
     </div>

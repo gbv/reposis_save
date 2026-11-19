@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+
+  <section xml:lang="de">
+    <head>
+      <!-- START save adaptions -->
+      <meta name="title" content="Erweiterte Suche" />
+      <meta name="description" content="Erweiterte Suche über alle Objekte" />
+      <!-- END save adaptions -->
+    </head>
+  </section>
+  <section xml:lang="en">
+    <head>
+      <meta name="title" content="Complex search mask" />
+      <meta name="description" content="Complex search mask for all publications" />
+    </head>
+  </section>
+
+  <section xml:lang="all" xmlns:xed="http://www.mycore.de/xeditor"  xmlns:mir="http://www.mycore.de/mir"
+           i18n="component.mods.editor.search.complex.pagetitle">
+    <xed:form class="form-horizontal">
+      <xed:cleanup-rule xpath="//condition" relevant-if="(string-length(@value) &gt; 0) or value[string-length(text()) &gt; 0 ]" />
+      <xed:cleanup-rule xpath="//boolean" relevant-if="boolean|condition" />
+      <xed:cleanup-rule xpath="//condition[@selectable='true']" relevant-if="@id = ../selectCondition/@keep" />
+      <xed:cleanup-rule xpath="//*/@selectable|//selectCondition" relevant-if="false()" />
+      <xed:source uri="searchInput:{id}" />
+      <xed:source uri="webapp:editor/search/template/complex.xml" />
+      <xed:bind xpath="query">
+        <xed:bind xpath="@mask" default="content/search/complex.xed" />
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">
+              <xed:output i18n="component.mods.editor.search.complex.label" />
+            </h3>
+          </div>
+          <div class="card-body">
+            <div class="col-md-10">
+              <xed:bind xpath="conditions/boolean/boolean">
+                <!-- START save adaptions -->
+                <mir:template name="selectInput"
+                  xpath="condition[@field='category.top'][1]/@value" id="inputInst1"
+                  i18n="save.search.institute"
+                  uri="xslStyle:items2options:classification:editorComplete:-1:children:mir_institutes" />
+                <mir:template name="textInput"
+                  xpath="condition[@field='mods.objectName'][@operator='contains']/@value" id="inputObjectName1"
+                  i18n="save.search.objectName" />
+                <mir:template name="textInput"
+                  xpath="condition[@field='mods.title,mods.title.lang.de,mods.title.lang.en,mods.title.lang.es,mods.title.lang.fr,mods.title.lang.it,mods.title.lang.ru,mods.title.lang.ru.latin,mods.title.lang.tr'][@operator='contains']/@value" id="inputTitle1"
+                  i18n="component.mods.metaData.dictionary.title" />
+                <mir:template name="selectInput"
+                  xpath="condition[@field='category.top'][2]/@value" id="inputGenre1"
+                  i18n="component.mods.genre"
+                  uri="xslStyle:items2options?allSelectable=true:classification:editorComplete:-1:children:mir_genres" />
+                <mir:template name="selectInput"
+                  xpath="condition[@field='category.top'][3]/@value" id="inputTypeOfResource1"
+                  i18n="component.mods.metaData.dictionary.typeOfResource"
+                  uri="xslStyle:items2options:classification:editorComplete:-1:children:typeOfResource" />
+                <mir:template name="textInput"
+                  xpath="condition[@field='mods.name'][@operator='contains']/@value" id="inputPerson1"
+                  i18n="mir.nameType.personal" />
+                <mir:template name="textInput"
+                  xpath="condition[@field='mods.material'][@operator='contains']/@value" id="inputMaterial1"
+                  i18n="save.physicalDescription.form.material" />
+                <mir:template name="textInput"
+                  xpath="condition[@field='mods.technique'][@operator='contains']/@value" id="inputTechnique1"
+                  i18n="save.physicalDescription.form.technique" />
+                <div class="mir-form-group row">
+                  <label for="inputDatingFrom1" class="col-md-3 col-form-label text-md-end form-label">
+                    <xed:output i18n="component.mods.metaData.dictionary.dateCreated" />
+                  </label>
+                  <div class="col-md-9">
+                    <div class="input-group">
+                      <xed:bind xpath="condition[@field='mods.datingEnd'][@operator='&gt;=']/@value">
+                        <input type="number" step="1" class="form-control" id="inputDatingFrom1"
+                          placeholder="{i18n:save.search.dating.from}" />
+                      </xed:bind>
+                      <span class="input-group-text">-</span>
+                      <xed:bind xpath="condition[@field='mods.datingStart'][@operator='&lt;=']/@value">
+                        <input type="number" step="1" class="form-control" id="inputDatingTo1"
+                          aria-label="{i18n:save.search.dating.to}" placeholder="{i18n:save.search.dating.to}" />
+                      </xed:bind>
+                    </div>
+                  </div>
+                </div>
+                <mir:template name="textInput"
+                  xpath="condition[@field='mods.subjectGroup'][@operator='contains']/@value" id="inputSubjectGroup1"
+                  i18n="save.search.subjectGroup" />
+                <mir:template name="textInput"
+                  xpath="condition[@field='mods.keyword'][@operator='contains']/@value" id="inputKeyword1"
+                  i18n="component.mods.metaData.dictionary.subject" />
+                <mir:template name="selectInput"
+                  xpath="condition[@field='category.top'][4]/@value" id="inputLicense1"
+                  i18n="mir.rights"
+                  uri="xslStyle:items2options:classification:editorComplete:-1:children:mir_licenses" />
+                <!-- END save adaptions -->
+              </xed:bind>
+            <!-- sort -->
+              <xed:bind xpath="sortBy/field">
+                <div class="mir-form-group row">
+                  <label for="inputSortBy" class="col-md-3 col-form-label text-md-end form-label">
+                    <xed:output i18n="editor.search.sortby" />
+                  </label>
+                  <div class="col-md-4">
+                    <xed:bind xpath="@name">
+                      <select id="inputSortBy" class="form-control form-select">
+                        <!-- START save adaptions -->
+                        <!--
+                        <option value="mods.dateIssued">
+                          <xed:output i18n="component.mods.metaData.dictionary.dateIssued" />
+                        </option>
+                        -->
+                        <option value="mods.dateCreated">
+                          <xed:output i18n="component.mods.metaData.dictionary.dateCreated" />
+                        </option>
+                        <!-- END save adaptions -->
+                        <option value="score">
+                          <xed:output i18n="editor.search.score" />
+                        </option>
+                      </select>
+                    </xed:bind>
+                  </div>
+                  <div class="col-md-3">
+                    <xed:bind xpath="@order">
+                      <select aria-label="{i18n:editor.search.sortby}" class="form-control form-select">
+                        <option value="descending">
+                          <xed:output i18n="editor.search.descending" />
+                        </option>
+                        <option value="ascending">
+                          <xed:output i18n="editor.search.ascending" />
+                        </option>
+                      </select>
+                    </xed:bind>
+                  </div>
+                </div>
+              </xed:bind>
+            </div>
+          </div>
+          <!-- submit -->
+          <div class="card-footer clearfix">
+            <div class="float-end">
+              <mir:template name="submitButton" i18n="editor.search.search"
+                            target="servlet_MCRQLSearchServlet" order="primary-button"/>
+            </div>
+          </div>
+        </div>
+      </xed:bind>
+    </xed:form>
+  </section>
+</MyCoReWebPage>

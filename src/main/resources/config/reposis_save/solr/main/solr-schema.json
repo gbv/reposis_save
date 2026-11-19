@@ -1,1 +1,61 @@
-[]
+[
+  {
+    "add-field": {
+      "name": "mods.dateCreated",
+      "type": "string"
+    }
+  },
+  {
+    "add-field": {
+      "name": "mods.yearCreated",
+      "type": "pint"
+    }
+  },
+  {
+    "add-field": {
+      "name": "mods.objectName",
+      "type": "text_general",
+      "multiValued": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "mods.subjectGroup",
+      "type": "text_general",
+      "multiValued": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "mods.keyword",
+      "type": "text_general",
+      "multiValued": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "mods.material",
+      "type": "text_general",
+      "multiValued": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "mods.technique",
+      "type": "text_general",
+      "multiValued": true
+    }
+  },
+  {
+    "add-field": {
+      "name": "mods.datingStart",
+      "type": "pint"
+    }
+  },
+  {
+    "add-field": {
+      "name": "mods.datingEnd",
+      "type": "pint"
+    }
+  }
+]
