@@ -2,20 +2,22 @@
   <conditions format="xml">
     <boolean operator="and">
       <boolean operator="and">
-        <boolean operator="and">
-          <condition field="mods.title,mods.title.lang.de,mods.title.lang.en,mods.title.lang.es,mods.title.lang.fr,mods.title.lang.it,mods.title.lang.ru,mods.title.lang.ru.latin,mods.title.lang.tr" operator="contains" />
-          <condition field="mods.author" operator="contains" />
-          <condition field="id,isbn,mods.identifier" operator="=" />
           <!-- START save adaptions -->
-          <!--
-          <condition operator="=" field="mods.dateIssued" />
-          -->
-          <condition operator="=" field="mods.dateCreated" />
+          <condition field="category.top" operator="=" />
+          <condition field="category.top" operator="=" />
+          <condition field="category.top" operator="=" />
+          <condition field="category.top" operator="=" />
+          <condition field="mods.objectName" operator="contains" />
+          <condition field="mods.title,mods.title.lang.de,mods.title.lang.en,mods.title.lang.es,mods.title.lang.fr,mods.title.lang.it,mods.title.lang.ru,mods.title.lang.ru.latin,mods.title.lang.tr" operator="contains" />
+          <condition field="mods.name" operator="contains" />
+          <condition field="mods.material" operator="contains" />
+          <condition field="mods.technique" operator="contains" />
+          <condition field="mods.datingEnd" operator="&gt;=" />
+          <condition field="mods.datingStart" operator="&lt;=" />
+          <condition field="mods.subjectGroup" operator="contains" />
+          <condition field="mods.keyword" operator="contains" />
+          <condition field="state" operator="=" />
           <!-- END save adaptions -->
-          <condition field="category.top" operator="=" />
-          <condition field="category.top" operator="=" />
-          <condition field="category.top" operator="=" />
-        </boolean>
       </boolean>
       <condition field="objectType" operator="=" value="mods" />
     </boolean>
