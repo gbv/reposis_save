@@ -3,8 +3,10 @@
 
   <section xml:lang="de">
     <head>
-      <meta name="title" content="Komplexe Suche" />
-      <meta name="description" content="Komplexe Suche über alle Publikationen" />
+      <!-- START save adaptions -->
+      <meta name="title" content="Erweiterte Suche" />
+      <meta name="description" content="Erweiterte Suche über alle Objekte" />
+      <!-- END save adaptions -->
     </head>
   </section>
   <section xml:lang="en">
